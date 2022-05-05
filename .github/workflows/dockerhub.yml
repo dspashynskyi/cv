@@ -27,6 +27,6 @@ jobs:
 
       
       - name: dockerhub login
-        run: docker login -u dspashynskyi -p ${{ secrets.DOCKERHUB_PASSWORD }}
+        run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u dspashynskyi --password-stdin
 
     
