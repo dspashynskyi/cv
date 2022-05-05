@@ -24,7 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
+      
+      - name: build the docker image
+        run: docker build . --file Dockerfile --tag dspashynskyi/cv:latest
       
       - name: dockerhub login
         run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u dspashynskyi --password-stdin
