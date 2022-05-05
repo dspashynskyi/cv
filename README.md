@@ -1,2 +1,1 @@
-# CV
-Repo for CV
+# Resume-Dmytro-Pashynskyi
