@@ -1,0 +1,18 @@
+.skills {
+  background-color: $thirdaryBgColor;
+  color: $secondaryColor;
+}
+
+.skills__title {
+  margin-bottom: 20px;
+}
+
+.skills__list {
+  list-style-type: "- ";
+}
+
+.skills__item {
+  &:nth-child(n + 2) {
+    margin-top: 6px;
+  }
+}

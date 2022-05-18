@@ -1,0 +1,44 @@
+body {
+  background-color: $primaryBgColor;
+  color: $primatyColor;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+}
+
+.container {
+  max-width: 1520px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+
+  &__left {
+    width: calc(50% - 15%);
+  }
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  color: $primatyColor;
+
+  &--light {
+    color: $secondaryColor;
+  }
+
+  &--thin {
+    font-weight: 400;
+  }
+}
+
+.link {
+  color: inherit;
+}
+
+.container--section {
+  padding: 30px 50px;
+}

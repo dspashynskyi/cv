@@ -1,0 +1,22 @@
+.experience__item {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:nth-last-child(n + 2) {
+    border-bottom: 1px solid $primatyColor;
+  }
+}
+
+.experience__pos {
+  width: calc(40%);
+}
+
+.experience__respons-list {
+  width: calc(100% - 40%);
+  list-style-type: "- ";
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
