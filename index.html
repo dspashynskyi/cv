@@ -4,88 +4,109 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dmytro Pashynskyi resume</title>
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- modern-normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Dmytro Pashynskyi CV</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-
   <body>
-    <div class="main-container">
-      <div class="left">
-        <section>
-          <h2 class="hidden">Photo</h2>
-          <div class="main-frame">
-            <img src="./images/photo.jpg" alt="My photo" class="photo" />
+    <div class="container">
+      <div class="container__left">
+        <!-- Photo & contacts -->
+
+        <section class="contacts">
+          <div class="container--section">
+            <div class="photo-box">
+              <img class="photo" src="./images/photo.jpg" alt="My photo" />
+            </div>
+            <h2 class="contacts__title title title--light">Contact me</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link link" href="tel:+380937366534">
+                  <svg class="contacts__icon" width="25" height="25">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  +38 (093) 736-65-34</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a
+                  class="contacts__link link"
+                  href="mailto:dpashynskyi@gmail.com"
+                >
+                  <svg class="contacts__icon" width="25" height="25">
+                    <use href="./images/symbol-defs.svg#icon-envelop"></use>
+                  </svg>
+                  dpashynskyi@gmail.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a
+                  class="contacts__link link"
+                  href="https://www.facebook.com/dpashynskyi"
+                >
+                  <svg class="contacts__icon" width="25" height="25">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                  facebook.com/dpashynskyi</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a
+                  class="contacts__link link"
+                  href="https://goo.gl/maps/9gQ6KW4rgk5buMsR8"
+                >
+                  <svg class="contacts__icon" width="25" height="25">
+                    <use href="./images/symbol-defs.svg#icon-home"></use>
+                  </svg>
+                  20 Shirshova street, apart 8, Vinnytsya</a
+                >
+              </li>
+            </ul>
           </div>
         </section>
 
-        <div class="container">
-          <section>
-            <h1 class="title name">Dmytro Pashynskyi</h1>
+        <!-- Tech skills -->
 
-            <!-- Skills -->
-
-            <div class="chapter">
-              <div class="icon-chapter">
-                <svg class="icon" width="30" height="30">
-                  <use href="./images/symbol-defs.svg#icon-cog"></use>
-                </svg>
-              </div>
-              <h2 class="title chapter-title">Skills</h2>
-            </div>
-            <ul class="list-style">
-              <li>
+        <section class="skills">
+          <div class="container--section">
+            <h2 class="skills__title title title--light">My Tech Skills</h2>
+            <ul class="skills__list">
+              <li class="skills__item">
                 <p>Network: OSI model understandin</p>
               </li>
-              <li>
+              <li class="skills__item">
                 <p>Protocols: - SSH/Telnet, DHCP, SMTP, POP3, IMAP, FTP, DNS</p>
               </li>
-              <li>
+              <li class="skills__item">
                 <p>Devops: Bash, python, ansible, jenkins - basic skills</p>
               </li>
-              <li>
+              <li class="skills__item">
                 <p>
                   Monitoring tools: Splunk, AppDynamics, Grafana - only user
                   side
                 </p>
               </li>
-              <li>
+              <li class="skills__item">
                 <p>Database: MySQL - basic knowledge</p>
               </li>
-              <li>
+              <li class="skills__item">
                 <p>
                   OS: Windows/Windows Server, Linux Ubuntu/Linux Mint - basic
                   skils
                 </p>
               </li>
-              <li>
+              <li class="skills__item">
                 <p>Experience in working in B2C environment</p>
               </li>
-              <li>
+              <li class="skills__item">
                 <p>Web Development: HTML, CSS, WordPress, ChromeDevTools</p>
               </li>
-              <li>
+              <li class="skills__item">
                 <p>
                   Languages: Ukrainian - native, Russian - native, English -
                   upper-intermediate (B2)
                 </p>
               </li>
-              <li>
+              <li class="skills__item">
                 <p>
                   Other tools: Postman, Zendesk, Jira, Confuence, Slack,
                   Outlook, Skype for Business, MS teams, MS Office, Google
@@ -93,302 +114,252 @@
                 </p>
               </li>
             </ul>
-          </section>
+          </div>
+        </section>
 
-          <!-- Personal qualities -->
+        <!-- Soft skills -->
 
-          <section>
-            <div class="chapter">
-              <div class="icon-chapter">
-                <svg class="icon" width="30" height="30">
-                  <use href="./images/symbol-defs.svg#icon-bubbles"></use>
-                </svg>
-              </div>
-              <h2 class="title chapter-title">Personal qualities</h2>
-            </div>
-            <ul class="list-style">
-              <li>
+        <section class="skills">
+          <div class="container--section">
+            <h2 class="skills__title title title--light">My Soft Skills</h2>
+            <ul class="skills__list">
+              <li class="skills__item">
                 <p>Good communication skills both verbal and written</p>
               </li>
-              <li>
+              <li class="skills__item">
                 <p>Good trouble shooting skills</p>
               </li>
-              <li>
+              <li class="skills__item">
                 <p>
                   Strong analytical skills and able to collect and interpret
                   large amounts of data from various sources
                 </p>
               </li>
-              <li>
+              <li class="skills__item">
                 <p>
                   Strong organizational skills with the ability to multitask in
                   order to handle multiple tasks in a real-time environment
                 </p>
               </li>
-              <li>
+              <li class="skills__item">
                 <p>
                   Self-motivated, energetic, and resultoriented, cooperative and
                   a teamplayer as well
                 </p>
               </li>
             </ul>
-          </section>
-
-          <!-- Contact me -->
-
-          <section>
-            <div class="chapter">
-              <div class="icon-chapter">
-                <svg class="icon" width="30" height="30">
-                  <use href="./images/symbol-defs.svg#icon-user"></use>
-                </svg>
-              </div>
-              <h2 class="title chapter-title">Contact me</h2>
-            </div>
-            <ul class="contact-list">
-              <li>
-                <a class="link" href="tel:+380937366534">
-                  <div class="icon-contact">
-                    <svg class="icon" width="15" height="15">
-                      <use href="./images/symbol-defs.svg#icon-phone"></use>
-                    </svg>
-                  </div>
-                  +38 (093) 736-65-34</a
-                >
-              </li>
-              <li>
-                <a class="link" href="mailto:dpashynskyi@gmail.com">
-                  <div class="icon-contact">
-                    <svg class="icon" width="15" height="15">
-                      <use href="./images/symbol-defs.svg#icon-envelop"></use>
-                    </svg>
-                  </div>
-                  dpashynskyi@gmail.com</a
-                >
-              </li>
-              <li>
-                <a class="link" href="https://www.facebook.com/dpashynskyi">
-                  <div class="icon-contact">
-                    <svg class="icon" width="15" height="15">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                  </div>
-                  facebook.com/dpashynskyi</a
-                >
-              </li>
-              <li>
-                <a class="link" href="https://goo.gl/maps/9gQ6KW4rgk5buMsR8">
-                  <div class="icon-contact">
-                    <svg class="icon" width="15" height="15">
-                      <use href="./images/symbol-defs.svg#icon-home"></use>
-                    </svg>
-                  </div>
-                  20 Shirshova street, apart 8, Vinnytsya</a
-                >
-              </li>
-            </ul>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
 
-      <div class="container right">
+      <div class="container__right">
+        <!-- Name section -->
+
+        <section class="name">
+          <div class="container--section">
+            <h1 class="name__title title">Dmytro Pashynskyi</h1>
+            <h2 class="title">//Write the position here, in html file//</h2>
+          </div>
+        </section>
+
         <!-- Experience -->
 
-        <section>
-          <div class="chapter">
-            <div class="icon-chapter">
-              <svg class="icon" width="30" height="30">
-                <use href="./images/symbol-defs.svg#icon-cogs"></use>
-              </svg>
-            </div>
-            <h2 class="title chapter-title">Experience</h2>
+        <section class="experience">
+          <div class="container--section">
+            <h2 class="title">Experience</h2>
+            <ul class="experience__list">
+              <li class="experience__item">
+                <div class="experience__pos">
+                  <h3 class="title title--thin">NOC engineer</h3>
+                  <h4 class="title title--thin">Onseo</h4>
+                  <p>
+                    Vinnytsya, Ukraine<br />
+                    July 2019 — present
+                  </p>
+                </div>
+                <ul class="experience__respons-list">
+                  <li>
+                    <p>Providing 24/7 technical support</p>
+                  </li>
+                  <li>
+                    <p>
+                      Oral and written communications with development teams
+                    </p>
+                  </li>
+                  <li>
+                    <p>Managing incidents, responding to incoming requests</p>
+                  </li>
+                  <li>
+                    <p>
+                      Providing incident clarification, basic troubleshooting
+                      and escalation
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Conducting day-to-day support tasks – patching, updating,
+                      monitoring, log review, provisioning, backing up,
+                      documenting
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="experience__item">
+                <div class="experience__pos">
+                  <h3 class="title title--thin">Marketer</h3>
+                  <h4 class="title title--thin">Allsimple</h4>
+                  <p>
+                    Vinnytsya, Ukraine<br />
+                    August 2018 — June 2019
+                  </p>
+                </div>
+                <ul class="experience__respons-list">
+                  <li>
+                    <p>Search engine optimization</p>
+                  </li>
+                  <li>
+                    <p>Social Media Marketing</p>
+                  </li>
+                  <li>
+                    <p>Email marketing</p>
+                  </li>
+                  <li>
+                    <p>Sales managing</p>
+                  </li>
+                  <li>
+                    <p>Contextual advertising</p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="experience__item">
+                <div class="experience__pos">
+                  <h3 class="title title--thin">Research Analyst</h3>
+                  <h4 class="title title--thin">
+                    Ciklum Global Software Engineering
+                  </h4>
+                  <p>
+                    Vinnytsya, Ukraine<br />
+                    November 2015 — August 2018
+                  </p>
+                </div>
+                <ul class="experience__respons-list">
+                  <li>
+                    <p>
+                      Researching business products using web analytics to
+                      enhance supply chain management
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Conducting technical data analysis using proprietary
+                      software
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Compiling and interpreting of data following an
+                      established data model
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Producing reports using internal company software, Asana,
+                      Jira
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="experience__item">
+                <div class="experience__pos">
+                  <h3 class="title title--thin">SEO Specialist</h3>
+                  <h4 class="title title--thin">Automoto.ua</h4>
+                  <p>
+                    Vinnytsya, Ukraine<br />
+                    October 2014 — November 2015
+                  </p>
+                </div>
+                <ul class="experience__respons-list">
+                  <li>
+                    <p>
+                      Supporting technical operations for e-Commerce corporation
+                    </p>
+                  </li>
+                  <li>
+                    <p>Conducting data analysis using Google Analytics</p>
+                  </li>
+                  <li>
+                    <p>Creating a site map</p>
+                  </li>
+                  <li>
+                    <p>
+                      Generating/expanding semantic kernel and segmentating in
+                      order to run contextual advertising
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Managing search engine protocols and monitoring site
+                      traffic
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Creating internal relink for proper weight redistribution
+                      page values
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Developing end-user FAQ on website usability and interface
+                      for client retention and motivation for action
+                    </p>
+                  </li>
+                  <li>
+                    <p>Managing access for search engine bots</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <ul>
-            <li>
-              <h3 class="title work-title">NOC engineer</h3>
-              <h4 class="title place-title">Onseo</h4>
-              <p>
-                Vinnytsya, Ukraine<br />
-                July 2019 — present
-              </p>
-              <ul class="list-style">
-                <li>
-                  <p>Providing 24/7 technical support</p>
-                </li>
-                <li>
-                  <p>Oral and written communications with development teams</p>
-                </li>
-                <li>
-                  <p>Managing incidents, responding to incoming requests</p>
-                </li>
-                <li>
-                  <p>
-                    Providing incident clarification, basic troubleshooting and
-                    escalation
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Conducting day-to-day support tasks – patching, updating,
-                    monitoring, log review, provisioning, backing up,
-                    documenting
-                  </p>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <h3 class="title work-title">Marketer</h3>
-              <h4 class="title place-title">Allsimple</h4>
-              <p>
-                Vinnytsya, Ukraine<br />
-                August 2018 — June 2019
-              </p>
-              <ul class="list-style">
-                <li>
-                  <p>Search engine optimization</p>
-                </li>
-                <li>
-                  <p>Social Media Marketing</p>
-                </li>
-                <li>
-                  <p>Email marketing</p>
-                </li>
-                <li>
-                  <p>Sales managing</p>
-                </li>
-                <li>
-                  <p>Contextual advertising</p>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <h3 class="title work-title">Research Analyst</h3>
-              <h4 class="title place-title">
-                Ciklum Global Software Engineering
-              </h4>
-              <p>
-                Vinnytsya, Ukraine<br />
-                November 2015 — August 2018
-              </p>
-              <ul class="list-style">
-                <li>
-                  <p>
-                    Researching business products using web analytics to enhance
-                    supply chain management
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Conducting technical data analysis using proprietary
-                    software
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Compiling and interpreting of data following an established
-                    data model
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Producing reports using internal company software, Asana,
-                    Jira
-                  </p>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <h3 class="title work-title">SEO Specialist</h3>
-              <h4 class="title place-title">Automoto.ua</h4>
-              <p>
-                Vinnytsya, Ukraine<br />
-                October 2014 — November 2015
-              </p>
-              <ul class="list-style">
-                <li>
-                  <p>
-                    Supporting technical operations for e-Commerce corporation
-                  </p>
-                </li>
-                <li>
-                  <p>Conducting data analysis using Google Analytics</p>
-                </li>
-                <li>
-                  <p>Creating a site map</p>
-                </li>
-                <li>
-                  <p>
-                    Generating/expanding semantic kernel and segmentating in
-                    order to run contextual advertising
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Managing search engine protocols and monitoring site traffic
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Creating internal relink for proper weight redistribution
-                    page values
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Developing end-user FAQ on website usability and interface
-                    for client retention and motivation for action
-                  </p>
-                </li>
-                <li>
-                  <p>Managing access for search engine bots</p>
-                </li>
-              </ul>
-            </li>
-          </ul>
         </section>
 
         <!-- Education -->
 
         <section>
-          <div class="chapter">
-            <div class="icon-chapter">
-              <svg class="icon" width="30" height="30">
-                <use href="./images/symbol-defs.svg#icon-book"></use>
-              </svg>
-            </div>
-            <h2 class="title chapter-title">Education</h2>
+          <div class="container--section">
+            <h2 class="title">Education</h2>
+            <ul>
+              <li>
+                <h3 class="title">Master degree / 2014</h3>
+                <p>
+                  Marketing<br />
+                  Vinnytsya Institute of Economics and Trade Kyiv National
+                  University of Economics and Trade<br />
+                  Vinnytsya, Ukraine
+                </p>
+              </li>
+              <li>
+                <h3 class="title">Buchelor degree / 2013</h3>
+                <p>
+                  Marketing<br />
+                  Vinnytsya Institute of Economics and Trade Kyiv National
+                  University of Economics and Trade<br />
+                  Vinnytsya, Ukraine
+                </p>
+              </li>
+              <li>
+                <h3 class="title">Junior specialist degree / 2009</h3>
+                <p>
+                  Commercial<br />
+                  Vinnytsya Polytechnic College<br />
+                  Vinnytsya, Ukraine
+                </p>
+              </li>
+            </ul>
           </div>
-          <ul>
-            <li>
-              <h3 class="title edu-title">Master degree / 2014</h3>
-              <p>
-                Marketing<br />
-                Vinnytsya Institute of Economics and Trade Kyiv National
-                University of Economics and Trade<br />
-                Vinnytsya, Ukraine
-              </p>
-            </li>
-            <li>
-              <h3 class="title edu-title">Buchelor degree / 2013</h3>
-              <p>
-                Marketing<br />
-                Vinnytsya Institute of Economics and Trade Kyiv National
-                University of Economics and Trade<br />
-                Vinnytsya, Ukraine
-              </p>
-            </li>
-            <li>
-              <h3 class="title edu-title">Junior specialist degree / 2009</h3>
-              <p>
-                Commercial<br />
-                Vinnytsya Polytechnic College<br />
-                Vinnytsya, Ukraine
-              </p>
-            </li>
-          </ul>
         </section>
       </div>
     </div>
