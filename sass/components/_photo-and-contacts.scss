@@ -12,6 +12,7 @@
 .photo-box {
   width: 430px;
   height: 430px;
+  max-width: 100%;
 
   border-radius: 50%;
   background-image: linear-gradient(
@@ -20,7 +21,7 @@
     #ffe400 50%,
     #ffe400
   );
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 
   display: flex;
   justify-content: center;

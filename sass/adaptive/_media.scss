@@ -1,0 +1,80 @@
+@media screen and (max-width: 1520px) {
+  .photo-box {
+    width: 340px;
+    height: 340px;
+    .photo {
+      width: 325px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+  .container__left {
+    width: 100%;
+    min-height: auto;
+  }
+  .container__right {
+    width: 100%;
+  }
+  .experience__item {
+    flex-direction: column;
+    .experience__pos {
+      width: 100%;
+    }
+    .experience__respons-list {
+      width: 100%;
+    }
+  }
+  .name {
+    display: none;
+  }
+  .name--mobile {
+    display: block;
+  }
+  .name__title {
+    color: $secondaryColor;
+    text-align: center;
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container--section {
+    padding: 30px 10px;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  .name--mobile {
+    .name__title {
+      font-size: 2.7em;
+      text-align: center;
+      line-height: 1.2;
+    }
+  }
+  .title--company {
+    line-height: 1.3;
+  }
+  .title--university {
+    font-size: 0.9em;
+  }
+  .photo-box {
+    width: 282px;
+    height: 282px;
+    .photo {
+      width: 272px;
+    }
+  }
+  .experience {
+    .experience__list {
+      padding: 0 20px;
+    }
+  }
+  .education {
+    .education__list {
+      padding: 0 10px;
+    }
+  }
+}
