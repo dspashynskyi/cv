@@ -9,20 +9,26 @@ body {
 }
 
 .container {
-  max-width: 1520px;
-  margin-left: auto;
-  margin-right: auto;
-
   display: flex;
 
   &__left {
-    width: calc(50% - 15%);
+    width: 35%;
+    min-height: 100vh;
+    background-color: $thirdaryBgColor;
   }
+
+  &__right {
+    width: 65%;
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 .title {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
   font-size: 2em;
   color: $primatyColor;
 
@@ -32,6 +38,21 @@ body {
 
   &--thin {
     font-weight: 400;
+  }
+
+  &--company {
+    font-weight: 500;
+  }
+
+  &--position {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+
+  &--university {
+    font-weight: 400;
+    font-size: 1.3em;
   }
 }
 

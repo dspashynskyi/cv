@@ -1,0 +1,19 @@
+.education {
+  .education__item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .container--section {
+    padding: 30px 0;
+  }
+
+  .education__list {
+    padding: 0 50px;
+  }
+
+  h2 {
+    background-color: $thirdaryBgColor;
+    padding-left: 50px;
+    color: $secondaryColor;
+  }
+}
