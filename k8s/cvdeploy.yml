@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+ # The type of workload we are creating 
+kind: Deployment
+metadata:
+  # Name of deployment - Required
+  name: cvdeploy 
+spec:
+  replicas: 2
+  selector:
+    matchLabels: 
+      app: cv
+  # Pod template which decribes the pod you want to deploy
+  template: 
+    metadata:
+      # Used to logically group pods together
+      labels: 
+        app: cv
+    # Specific details about the containers in the Pod
+    spec: 
+      containers:
+      - name: cvpod
+        # Docker Hub image to use
+        image: dspashynskyi/cv 
+        # Define ports to expose
+        ports: 
+        - containerPort: 80
+          # Reference name of port
+          name: http 
+       
