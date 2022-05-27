@@ -204,7 +204,7 @@ h2 {
 }
 .experience__period:before {
   content: "";
-  background: url(../../images/calendar.png) no-repeat;
+  background: url(../../../cv/images/calendar.png) no-repeat;
   background-size: contain;
   width: 20px;
   height: 20px;
